@@ -16,10 +16,14 @@ struct NiallOBroin: Website {
     // Update these properties to configure your website:
     var url = URL(string: "https://niallobroin.com")!
     var name = "Niall Ó Broin"
-    var description = "A description of NiallOBroin"
+    var description = "A few snaps from Niall Ó Broin"
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
 
+
 // This will generate your website using the built-in Foundation theme:
-try NiallOBroin().publish(withTheme: .foundation)
+try NiallOBroin().publish(withTheme: .myTheme,
+                               additionalSteps: [
+    .deploy(using: .gitHub("niallobroin/niallobroin.github.io"))]
+)
