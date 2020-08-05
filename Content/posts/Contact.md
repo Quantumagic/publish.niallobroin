@@ -6,7 +6,7 @@ typora-copy-images-to: ../../Resources/Images
 typora-root-url: ../../Resources
 ---
 
-# CONTACT
+# Contact
 
   <form action="https://formspree.io/nobyrnes@icloud.com" method="POST">
 <div style="background-color:lightgray;text-align:center; width:100%;height:450px">

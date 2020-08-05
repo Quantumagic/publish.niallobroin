@@ -3,7 +3,7 @@ import Publish
 import Plot
 
 // This type acts as the configuration for your website.
-struct NiallobroinGithubIo: Website {
+struct NiallOBroin: Website {
     enum SectionID: String, WebsiteSectionID {
         // Add the sections that you want your website to contain here:
         case posts
@@ -14,9 +14,9 @@ struct NiallobroinGithubIo: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://your-website-url.com")!
-    var name = "NIALL OBYRNES"
-    var description = "Nial l"
+    var url = URL(string: "https://niallobroin.com")!
+    var name = "Niall Ó Broin"
+    var description = "A few snaps from Niall Ó Broin"
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
@@ -182,7 +182,7 @@ extension Theme{
     static var myTheme :Theme{
         Theme(
             htmlFactory: MyHtmlFactory(),
-            resourcePaths: ["Resources/MyTheme/styles.css"]
+            resourcePaths: ["Resources/theme/styles.css"]
         )
     }
 }
@@ -190,4 +190,4 @@ extension Theme{
 
 
 // This will generate your website using the built-in Foundation theme:
-try NiallobroinGithubIo().publish(withTheme: .myTheme)
+try NiallOBroin().publish(withTheme: .myTheme)
